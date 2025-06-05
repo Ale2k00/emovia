@@ -12,7 +12,11 @@
   <script>
     const userManager = new Oidc.UserManager(window.oidcSettings);
     userManager.signinRedirectCallback().then(() => {
+ nxojav-codex/imposta-prima-parte-sito-web-con-cognito
       window.location = 'dashboard.html';
+
+      window.location = '/';
+ main
     }).catch(err => {
       document.body.append('Error: ' + err);
     });
