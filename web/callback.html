@@ -6,20 +6,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Completing authentication...</p>
+  <p>Completamento dell'autenticazione...</p>
   <script src="https://cdn.jsdelivr.net/npm/oidc-client-ts@2.0.2/dist/browser/oidc-client-ts.min.js"></script>
   <script src="js/settings.js"></script>
   <script>
     const userManager = new Oidc.UserManager(window.oidcSettings);
-    userManager.signinRedirectCallback().then(() => {
- nxojav-codex/imposta-prima-parte-sito-web-con-cognito
-      window.location = 'dashboard.html';
-
-      window.location = '/';
- main
-    }).catch(err => {
-      document.body.append('Error: ' + err);
-    });
+    userManager.signinRedirectCallback()
+      .then(() => {
+        window.location = 'dashboard.html';
+      })
+      .catch(err => {
+        document.body.append('Error: ' + err);
+      });
   </script>
 </body>
 </html>
