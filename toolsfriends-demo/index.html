@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToolsFriends Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar__content">
+      <a href="#" class="navbar__logo">ToolsFriends</a>
+      <nav class="navbar__menu">
+        <a href="#prodotti">Prodotti</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" title="Cambia tema">🌙</button>
+      <button class="navbar__toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Trasforma i tuoi ricordi in emozioni digitali</h1>
+      <p>Unisci i tuoi oggetti preferiti a contenuti multimediali personalizzati.</p>
+      <button class="button button--primary">Scopri di più</button>
+    </section>
+
+    <section id="prodotti" class="products-section">
+      <div class="container">
+        <h2>I nostri prodotti</h2>
+        <div class="filters">
+          <input type="text" id="searchInput" placeholder="Cerca prodotto...">
+          <div class="filter-buttons"></div>
+        </div>
+        <div class="grid cards" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section id="servizi" class="services-section">
+      <div class="container">
+        <h2>Servizi Digitali</h2>
+        <ul class="services-list">
+          <li>Album multimediali</li>
+          <li>Storytelling interattivo</li>
+          <li>Integrazione con social network</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contatti" class="contact-section">
+      <div class="container">
+        <h2>Contattaci</h2>
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Nome" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <textarea id="message" placeholder="Il tuo messaggio" required></textarea>
+          <button class="button button--primary" type="submit">Invia</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 ToolsFriends</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
